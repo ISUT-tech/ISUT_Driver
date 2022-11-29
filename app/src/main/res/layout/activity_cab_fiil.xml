@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainout"
+    tools:context=".CabFiilActivity">
+    <ImageView
+        android:id="@+id/imgs"
+        android:layout_width="@dimen/heightsize_120dp"
+        android:layout_height="@dimen/heightsize_120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/heightsize_80dp"
+        android:src="@drawable/car_shafre"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="@dimen/heightsize_10dp"
+        android:layout_marginBottom="@dimen/heightsize_10dp"
+        android:layout_marginLeft="@dimen/heightsize_20dp"
+        android:layout_marginRight="@dimen/heightsize_20dp"
+
+
+
+        app:layout_constraintTop_toBottomOf="@+id/imgs">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/heightsize_15dp">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightsize_0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fillViewport="true"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/welcms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:text="Cab Details form"
+                        android:textColor="@color/colored"
+                        android:textSize="@dimen/textsize_14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias=".2" />
+
+
+                    <EditText
+                        android:id="@+id/etname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:hint="Car Name"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/welcms" />
+
+                    <EditText
+                        android:id="@+id/etemamil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+                    <EditText
+                        android:id="@+id/etphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:hint="Phone"
+                        android:visibility="gone"
+                        android:inputType="number"
+                        android:maxLength="10"
+
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etemamil" />
+                    <EditText
+                        android:id="@+id/etcarnane"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:hint="Car No"
+                        android:inputType="textPersonName"
+
+
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etphone" />
+
+                    <LinearLayout
+                        android:id="@+id/lintype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/etcarnane"
+                        android:layout_marginBottom="@dimen/heightsize_10dp"
+                        android:layout_marginStart="@dimen/heightsize_15dp"
+                        android:background="@color/white"
+
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+
+                        android:weightSum="2">
+
+                        <RadioButton
+                            android:id="@+id/radioSudan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="@dimen/heightsize_10dp"
+                            android:layout_weight="1"
+                            android:text="Sedan"
+
+                            android:textSize="@dimen/textsize_16sp" />
+
+                        <RadioButton
+                            android:id="@+id/radioSUv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="@dimen/heightsize_10dp"
+                            android:layout_weight="1"
+                            android:text="SUV"
+
+                            android:textSize="@dimen/textsize_16sp" />
+
+                    </LinearLayout>
+
+
+
+
+                    <EditText
+                        android:id="@+id/etcarmodel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="Car Model"
+                        android:inputType="textPersonName"
+
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/lintype" />
+                    <EditText
+                        android:id="@+id/etlicense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="License No."
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etcarmodel" />
+                     <EditText
+                        android:id="@+id/etidenty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                         android:visibility="gone"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="Identity Number (Any)"
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etlicense" />
+                    <EditText
+                        android:id="@+id/etlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="City"
+                        android:inputType="textPersonName"
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etidenty" />
+ <EditText
+                        android:id="@+id/etlocation2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_15dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/editbox"
+                        android:paddingLeft="@dimen/heightsize_12dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:hint="State"
+                        android:inputType="textPersonName"
+
+                        android:textColor="#000000"
+                        android:textColorHint="#000000"
+                        android:textSize="@dimen/textsize_12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/etlocation" />
+
+                    <ImageView
+                        android:id="@+id/cabimg"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        android:layout_marginTop="@dimen/heightsize_10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/etlocation2"
+                        android:layout_height="@dimen/heightsize_100dp"
+                        android:src="@drawable/car_shafre"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:backgroundTint="@color/colored"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/heightsize_20dp"
+                        android:layout_marginLeft="@dimen/heightsize_20dp"
+                        android:layout_marginRight="@dimen/heightsize_20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/cabimg"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

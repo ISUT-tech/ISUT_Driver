@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ISUT Transportation</string>
+
+    <string name="enter_name">Please enter your name</string>
+    <string name="enter_cabno">Please Enter Your Cab No.</string>
+    <string name="enter_cabtype">Please Please Choose Cab Type.</string>
+    <string name="enter_cabname">Please Enter Your Cab Name/Model</string>
+    <string name="enter_linsence">Please Enter Your Lincense No.</string>
+    <string name="enter_indenty">Please Enter Your Identity Details</string>
+    <string name="invalid_mail">Please enter a valid email address</string>
+    <string name="enter_mail">Please Enter Your Email Id</string>
+    <string name="enter_date">Please Enter License Expire Date</string>
+    <string name="enterloc">Please Enter Your City</string>
+    <string name="enter_pass">Please Enter Password</string>
+    <string name="enter_cnf">Please Enter Confirm Password</string>
+    <string name="enter_match">Password Do not match</string>
+    <string name="enterstate">Please Enter Your State</string>
+    <string name="enter_phone">Please Enter Your Mobile Number</string>
+    <string name="google_maps_key">AIzaSyAH-h5u10d4u4CF4lNSUKNE2WSLkzW9otQ</string>
+
+</resources>
